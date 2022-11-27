@@ -60,7 +60,6 @@ app.get("/", async (req, res) => {
     title: "Express App",
     notes: await getNotes(),
     created: false,
-    updated: false,
   });
 });
 
@@ -70,7 +69,6 @@ app.post("/", async (req, res) => {
     title: "Express App",
     notes: await getNotes(),
     created: true,
-    updated: false,
   });
 });
 
@@ -80,7 +78,6 @@ app.delete("/:id", async (req, res) => {
     title: "Express App",
     notes: await getNotes(),
     created: false,
-    updated: false,
   });
 });
 
@@ -90,7 +87,6 @@ app.put("/:id", async (req, res) => {
     title: "Express App",
     notes: await getNotes(),
     created: false,
-    updated: true,
   });
 });
 
